@@ -76,7 +76,7 @@ def calcRiskFactor(gender, age, condition):
         
     if gender == "1":
         probabilityFinal *= 1.7
-    elif gender == 2:
+    elif gender == "2":
         probabilityFinal *= 2.8
     
     return format(probabilityFinal, ".2f")
