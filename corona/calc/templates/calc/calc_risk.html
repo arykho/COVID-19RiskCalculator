@@ -4,7 +4,7 @@
 {% block content %}
    {% if riskfactor %}
       <div class="riskfactor">Risk of dying if infected with COVID-19 is </span>
-         {{ riskfactor }}
+         {{ riskfactor }} %
       </div>
    {% endif %}
     <form method="POST" class="calc-form">{% csrf_token %}

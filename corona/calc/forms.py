@@ -3,7 +3,7 @@ from django import forms
 from .models import CalcRisk
 
 class CalcRiskForm(forms.ModelForm):
-    genderChoices = [('M','Male'),('F','Female')]
+    genderChoices = [('1','Female'),('2','Male')]
     gender=forms.CharField(label='Gender', widget=forms.RadioSelect(choices=genderChoices))
     age = forms.CharField(label = "Age", max_length = 10)
 
