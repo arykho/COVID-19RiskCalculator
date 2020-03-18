@@ -17,6 +17,9 @@ def calc_risk(request):
     
     calcform = CalcRiskForm()
     return render(request, 'calc/calc_risk.html', {'calcform': calcform})
+
+def vaccine(request):
+    return render(request, 'calc/vaccine.html', {})
         
 
 def calcRiskFactor(gender, age, condition):

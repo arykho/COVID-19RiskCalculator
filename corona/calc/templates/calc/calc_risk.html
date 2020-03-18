@@ -1,7 +1,10 @@
 {% extends 'calc/base.html' %}
 
-
 {% block content %}
+    <div class="page-header">
+            <h4>Coronavirus Risk Calculator</h4>
+    </div>
+
    {% if riskfactor %}
       <div class="riskfactor">Risk of dying if infected with COVID-19 is </span>
          {{ riskfactor }} %
