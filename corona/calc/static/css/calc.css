@@ -37,3 +37,30 @@
     color: #000000;
 }
 
+.vac-tbl td {
+   padding: 1em 0.5em;
+   border: 1px solid black;
+}
+
+.vac-tbl th {
+   text-align: center;
+   padding: 1em 2px;
+   border: 1px solid black;
+}
+
+td.p6 {
+   padding: 1em 0em;
+   width: 15%;
+}
+
+table.vac-tbl {
+     border: 1px solid black;
+     border-collapse: collapse;
+     margin: 2em 0em;
+}
+
+.pbar {
+  height: 1em;
+  background-color: #33adff;
+}
+

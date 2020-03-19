@@ -2,8 +2,10 @@
 <html>
     <head>
         <title>Coronavirus Risk Calculator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap-theme.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/calc.css' %}">
     </head>
@@ -19,7 +21,7 @@
           <a class="nav-link" href="{% url 'vaccine' %}">Vaccines</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'calc_risk' %}">Treatments</a>
+          <a class="nav-link" href="{% url 'treatment' %}">Treatments</a>
         </li>
       </ul>
     </div>

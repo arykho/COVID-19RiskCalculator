@@ -1,0 +1,53 @@
+{% extends "calc/base.html" %}
+
+ {% block content %}
+ 
+    <div class="page-header">
+            <h4>Treatment Updates</h4>
+    </div>
+
+<h4>*** Gilead Science Inc. expected to complete phase III clinical trials by April 1, 2023</h4>
+<table class="vac-tbl">
+<tr><th>Company</th><th>Name</th><th>Preclinical Trials</th>
+   <th>Phase 1</th><th>Phase 2</th><th>Phase 3</th></tr>
+
+<tr><td>Gilead Sciences Inc.</td><td>Remdesivir</td>
+	<td class="p6"><div class="pbar" pval="100%"></td>
+	<td class="p6"><div class="pbar" pval="100%"></td>
+	<td class="p6"><div class="pbar" pval="100%"></td>
+	<td class="p6"><div class="pbar" pval="25%"></td></tr>
+<tr><td>Regeneron Pharmaceuticals Inc.</td><td>TBD</td>
+	<td class="p6"><div class="pbar" pval="50%"></td>
+	<td class="p6">ETA Aug'20</td>
+	<td class="p6"></td>
+	<td class="p6"></td></tr>
+<tr><td>Takeda Pharmaceutical Company Ltd.</td><td>TAK-888</td>
+	<td class="p6"><div class="pbar" pval="50%"></td>
+	<td class="p6"></td>
+	<td class="p6"></td>
+	<td class="p6"></td></tr>
+<tr><td>Vir BioTechnology Inc.n</td><td>TBD</td>
+	<td class="p6"><div class="pbar" pval="50%"></td>
+	<td class="p6"></td>
+	<td class="p6"></td>
+	<td class="p6"></td></tr>
+
+</table>
+
+<table class="vac-tbl">
+<tr><th></th><th colspan="3">Clinical Trials</th></tr>
+<tr><td>Preclinical Trials</td><td>Phase 1</td><td>Phase 2</td><td>Phase 3</td></tr>
+<tr><td>A study to test a drug or device in animals. The aim of a preclinical study is to collect data in support of the safety of the new treatment. Preclinical studies are required before clinical trials in humans can be started.</td><td>This phase of the clinical trial assesses the safety of a drug or device using 20-100 volunteers. It is designed to determine the effects of the drug or device on humans. This phase also investigates the side effects that occur as dosage levels are increased.</td><td>This phase studies test the efficacy of a drug or device using 100-300 people. There are randomized trials where one group of patients receives the experimental drug, while a second "control" group receives a standard treatment or placebo. It determines the time it takes for the drug or device to become effective and how effective. </td><td>This phase studies involve randomized and blind testing in several hundred to several thousand patients. In this phase the drug is compared to standard treatments and further information is collected about safety and side effects.</td><tr>
+
+</table>
+
+ <script type='text/javascript'>
+    $(document).ready(function(){
+       $( ".pbar" ).each(function() {
+          $(this).css('width', $(this).attr('pval'));
+       });
+    });
+</script>
+
+
+ {% endblock %}

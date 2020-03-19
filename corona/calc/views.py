@@ -21,6 +21,8 @@ def calc_risk(request):
 def vaccine(request):
     return render(request, 'calc/vaccine.html', {})
         
+def treatment(request):
+    return render(request, 'calc/treatment.html', {})
 
 def calcRiskFactor(gender, age, condition):
     diseaseFactor = 1

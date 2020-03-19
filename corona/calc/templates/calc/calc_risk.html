@@ -12,6 +12,6 @@
    {% endif %}
     <form method="POST" class="calc-form">{% csrf_token %}
         {{ calcform.as_p }}
-        <button type="submit" class="save btn btn-default">Submit</button>
+        <button type="submit" class="save btn btn-primary">Submit</button>
     </form>
 {% endblock %}
