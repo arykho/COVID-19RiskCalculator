@@ -14,7 +14,7 @@ class CalcRiskForm(forms.ModelForm):
                         ('5', 'Cancer'),
                         ('6', 'None'),]
     
-    condition=forms.CharField(label='Comorbities', required=False,
+    condition=forms.CharField(label='Comorbidities', required=False,
                               widget=forms.CheckboxSelectMultiple(choices=conditionChoices))
 
     class Meta:
