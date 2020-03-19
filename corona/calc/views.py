@@ -25,7 +25,7 @@ def treatment(request):
     return render(request, 'calc/treatment.html', {})
 
 def calcRiskFactor(gender, age, condition):
-    diseaseFactor = 1
+    diseaseFactor = 1.009
     comorbities = 0
     counter = 0
 
@@ -43,9 +43,12 @@ def calcRiskFactor(gender, age, condition):
         # 
         #===================================================================
 
+        if comorbities == "6":
+            break;
+
         counter += 1
             
-        if counter > 1:
+        if counter > 0:
             diseaseFactor *= 1.1
                         
         if comorbities == "1":
@@ -58,8 +61,6 @@ def calcRiskFactor(gender, age, condition):
             diseaseFactor *= 1.06
         elif comorbities == "5":
             diseaseFactor *= 1.056
-        elif comorbities == "6":
-            diseaseFactor *= 1.009
 
         
     ageCount = 1;
